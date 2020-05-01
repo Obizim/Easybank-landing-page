@@ -171,6 +171,7 @@ nav{
 .section{
     overflow: hidden;
     color: $DarkBlue;
+    background: $VeryLightGray;
 
     &__text{
         padding: 4rem;
@@ -186,10 +187,36 @@ nav{
         grid-gap: 30px;
         padding: 0 5rem 5rem 5rem;
 
-        img{
-            width: 100%;
-            height: 200px;
+        &__list{
+            background: #fff;
+
+            img{
+                width: 100%;
+                height: 200px;
+            }
+            .texts{
+                padding: 10px 10px 10px 10px;
+
+                h6{
+                    font-size: 10px;
+                }
+               .big{
+                   font-size: 1.5rem;
+                   margin-top: 10px;
+                   cursor: pointer;
+
+                   &:hover{
+                       color: $LimeGreen;
+                       transition: all 0.3s ease-in-out;
+                   }
+               }
+               .small{
+                   font-size: 15px;
+                   margin-top: 10px;
+               }
+            }
         }
+
     }
 }
 

@@ -207,6 +207,7 @@ nav .menu_btn:active {
 .section {
   overflow: hidden;
   color: #2d314d;
+  background: #fafafa;
 }
 
 .section__text {
@@ -226,9 +227,38 @@ nav .menu_btn:active {
   padding: 0 5rem 5rem 5rem;
 }
 
-.section .articles img {
+.section .articles__list {
+  background: #fff;
+}
+
+.section .articles__list img {
   width: 100%;
   height: 200px;
+}
+
+.section .articles__list .texts {
+  padding: 10px 10px 10px 10px;
+}
+
+.section .articles__list .texts h6 {
+  font-size: 10px;
+}
+
+.section .articles__list .texts .big {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.section .articles__list .texts .big:hover {
+  color: #31d35c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.section .articles__list .texts .small {
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .attribution {
