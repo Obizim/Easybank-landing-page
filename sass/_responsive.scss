@@ -1,0 +1,108 @@
+@mixin media-sm {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@include media-sm{
+    // nav {
+    //   flex-direction: row;
+
+    //   .menu{
+    //       visibility: visible;
+    //   }
+
+    //   .menu-nav,.menu_btn {
+    //       opacity: 0;
+    //   }
+    // }
+
+    .container {
+        background: url("../images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position: right top;
+        flex-direction: column;
+
+        &__texts {
+        
+            h1 {
+              font-size: 1.5rem;
+            }
+    }
+    &__img {
+        img {
+          margin: 0 2rem;
+        }
+      }
+}
+
+.main {
+    .main__entry {
+      text-align: center;
+  
+      .text-secondary {
+       text-align: center;
+      }
+    }
+    .services__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+.section {
+  
+    &__text {
+      text-align: center;
+  
+      .text-primary {
+        font-size: 2rem;
+      }
+    }
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__list {
+           margin-top: 20px;
+
+           .texts {
+    
+            h6 {
+              font-size: 10px;
+            }
+            .big {
+              font-size: 1rem;
+              margin-top: 10px;
+            }
+            .small {
+              font-size: 13px;
+            }
+          }
+        }
+    }
+}
+
+footer {
+
+    .footer {
+      flex-direction: column;
+
+      .ul__list {
+
+        .ul_move{
+            margin-left: 2rem;
+        }
+    }
+
+    .menu_btn{
+        margin-top: 10rem;
+    }
+}
+}
+}
