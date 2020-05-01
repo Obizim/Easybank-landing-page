@@ -211,7 +211,7 @@ nav{
                    }
                }
                .small{
-                   font-size: 15px;
+                   font-size: 14.5px;
                    margin-top: 10px;
                }
             }
@@ -220,5 +220,78 @@ nav{
     }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+footer{
+    background: $DarkBlue;
+    padding: 4rem 4rem 0 4rem;
+    color: #fff;
+
+    ul{
+        list-style: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__list{
+            .footer-img{
+                margin-top: 20px;
+                img{
+                    margin: 3px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: $LimeGreen;
+                    }
+                }
+            }
+        }
+
+        .ul__list{
+            li{
+                margin: 5px;
+                cursor: pointer;
+                
+                &:hover{
+                    color: $LimeGreen;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .menu_btn{
+                margin: 5px 2rem;
+                float: right;
+                font-size: 15px;
+                border: none;
+                color: #fff;
+                border-radius: 25px;
+                padding: 15px 25px 15px 25px;
+                background-image: linear-gradient(to right, 
+                $LimeGreen, $BrightCyan);
+                cursor: pointer;
+                outline: none;
+                box-shadow: 0 3px  5px rgba(0, 0 ,0 , 0.1);
+       
+                &:active{
+                   transition: all 0.5s ease-in-out;
+                  transform: translateY(10px);
+               }
+            }
+            p{
+                font-size: 13px;
+                margin: 2rem 0 0 2rem;
+            }
+        }
+    }
+    .attribution {
+        margin-top: 20px;
+        font-size: 11px; 
+        text-align: center; 
+       }
+       .attribution a {
+            color: $LimeGreen;
+            font-size: 12px;
+            }
+}
+

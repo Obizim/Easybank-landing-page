@@ -257,16 +257,96 @@ nav .menu_btn:active {
 }
 
 .section .articles__list .texts .small {
-  font-size: 15px;
+  font-size: 14.5px;
   margin-top: 10px;
 }
 
-.attribution {
+footer {
+  background: #2d314d;
+  padding: 4rem 4rem 0 4rem;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__list .footer-img {
+  margin-top: 20px;
+}
+
+footer .footer__list .footer-img img {
+  margin: 3px;
+  cursor: pointer;
+}
+
+footer .footer__list .footer-img img:hover {
+  background: #31d35c;
+}
+
+footer .footer .ul__list li {
+  margin: 5px;
+  cursor: pointer;
+}
+
+footer .footer .ul__list li:hover {
+  color: #31d35c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer .ul__list .menu_btn {
+  margin: 5px 2rem;
+  float: right;
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 25px 15px 25px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer .ul__list .menu_btn:active {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+footer .footer .ul__list p {
+  font-size: 13px;
+  margin: 2rem 0 0 2rem;
+}
+
+footer .attribution {
+  margin-top: 20px;
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
-  color: #3e52a3;
+footer .attribution a {
+  color: #31d35c;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
