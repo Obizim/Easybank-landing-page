@@ -251,10 +251,6 @@ footer {
         img {
           margin: 3px;
           cursor: pointer;
-
-          &:hover {
-            background: $LimeGreen;
-          }
         }
       }
     }
@@ -303,4 +299,6 @@ footer {
     font-size: 12px;
   }
 }
- @import './_responsive';
+
+@import './response';
+@import './responsive';

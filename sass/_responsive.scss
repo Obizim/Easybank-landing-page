@@ -5,24 +5,13 @@
 }
 
 @include media-sm{
-    // nav {
-    //   flex-direction: row;
-
-    //   .menu{
-    //       visibility: visible;
-    //   }
-
-    //   .menu-nav,.menu_btn {
-    //       opacity: 0;
-    //   }
-    // }
-
     .container {
         background: url("../images/bg-intro-mobile.svg");
         background-repeat: no-repeat;
         background-size: 100vw;
         background-position: right top;
         flex-direction: column;
+        width: 100vw;
 
         &__texts {
         
@@ -32,7 +21,7 @@
     }
     &__img {
         img {
-          margin: 0 2rem;
+          margin: 0 2rem 0 2rem;
         }
       }
 }

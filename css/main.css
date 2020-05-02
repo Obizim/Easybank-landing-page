@@ -328,10 +328,6 @@ footer .footer__list .footer-img img {
   cursor: pointer;
 }
 
-footer .footer__list .footer-img img:hover {
-  background: #31d35c;
-}
-
 footer .footer .ul__list li {
   margin: 5px;
   cursor: pointer;
@@ -382,6 +378,71 @@ footer .attribution a {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1024px) and (max-width: 1600px) {
+  .container {
+    background: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right top;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container__texts h1 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .container__texts p {
+    font-size: 15px;
+  }
+  .main .main__entry {
+    text-align: center;
+  }
+  .main .main__entry .text-secondary {
+    text-align: center;
+  }
+  .main .services__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__text {
+    text-align: center;
+  }
+  .section__text .text-primary {
+    font-size: 2rem;
+  }
+  .section .articles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section .articles__list {
+    margin-top: 20px;
+  }
+  .section .articles__list .texts h6 {
+    font-size: 10px;
+  }
+  .section .articles__list .texts .big {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     background: url("../images/bg-intro-mobile.svg");
@@ -392,12 +453,13 @@ footer .attribution a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100vw;
   }
   .container__texts h1 {
     font-size: 1.5rem;
   }
   .container__img img {
-    margin: 0 2rem;
+    margin: 0 2rem 0 2rem;
   }
   .main .main__entry {
     text-align: center;
