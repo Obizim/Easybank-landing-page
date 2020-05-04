@@ -8,11 +8,12 @@ $VeryLightGray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
 
 
-
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
 }
 

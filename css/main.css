@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-size: 18px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .open_nav {
