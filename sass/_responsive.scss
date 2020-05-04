@@ -5,6 +5,65 @@
 }
 
 @include media-sm{
+  .open_nav{
+    display: none;
+  }
+
+  .hide_nav{
+    display: block;
+    width: 100vw;
+
+    .close{
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 1rem;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+
+      .menu{
+        cursor: pointer;
+        .burger_open{
+          &.show{
+            display: none;
+          }
+        }
+
+        .burger_close{
+          display: none;
+
+          &.open{
+            display: block;
+          }
+        }
+      }
+    }
+
+    .menu-nav{
+      background: #fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 1, 0.4);
+      text-align: center;
+      padding: 2rem 4rem 2rem 4rem;
+      position: absolute;
+      left: 3rem;
+      right: 3rem;
+      top: 5rem;
+      display: none;
+
+      &__item{
+        list-style: none;
+        margin: 10px;
+      }
+
+      &__link{
+        text-decoration: none;
+        outline: none;
+        color: $DarkBlue;
+      }
+    }
+  }
     .container {
         background: url("../images/bg-intro-mobile.svg");
         background-repeat: no-repeat;
@@ -21,7 +80,7 @@
     }
     &__img {
         img {
-          margin: 0 2rem 0 2rem;
+          margin: 0 3rem 0 3rem;
         }
       }
 }

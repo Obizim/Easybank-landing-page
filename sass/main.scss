@@ -1,6 +1,6 @@
 @import "./config";
 
-nav {
+.open_nav {
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -11,9 +11,6 @@ nav {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   z-index: 2;
 
-  .menu{
-      visibility: hidden;
-  }
   img {
     height: 20px;
     margin: 20px;
@@ -78,6 +75,10 @@ nav {
       transform: translateY(10px);
     }
   }
+}
+
+.hide_nav{
+  display: none;
 }
 
 .container {

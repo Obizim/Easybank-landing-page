@@ -11,14 +11,9 @@
 <!-- NAVIGATIONS -->
 
   <header>
-    <nav>
+    <nav class="open_nav">
    <img src="images/logo.svg" alt="Logo">
 
-    <div class="menu">
-        <img src="images/icon-hamburger.svg" alt="open" class="burger_open">
-        <img src="images/icon-close.svg" alt="close" class="burger_close">
-    </div>
-    
         <ul class="menu-nav">
             <li class="menu-nav__item">
                 <a href="#" class="menu-nav__link">Home</a>
@@ -40,6 +35,35 @@
         <button class="menu_btn">Request Invite</button>
     </nav>
 </header>
+
+<section class="hide_nav">
+<nav class="close">
+  <div class="menu_logo">
+    <img src="images/logo.svg" alt="Logo">
+  </div>
+   <div class="menu">
+       <img src="images/icon-hamburger.svg" alt="open" class="burger_open">
+       <img src="images/icon-close.svg" alt="close" class="burger_close">
+   </div>
+   </nav>
+   <ul id="menu-nav" class="menu-nav">
+    <li class="menu-nav__item">
+        <a href="#" class="menu-nav__link">Home</a>
+    </li>
+    <li class="menu-nav__item">
+        <a href="#" class="menu-nav__link">About</a>
+    </li>
+    <li class="menu-nav__item">
+        <a href="#" class="menu-nav__link">Contact</a>
+    </li>
+    <li class="menu-nav__item">
+        <a href="#" class="menu-nav__link">Blog</a>
+    </li>
+    <li class="menu-nav__item">
+      <a href="#" class="menu-nav__link">Careers</a>
+  </li>
+</ul>
+   </section>
 
 <!-- LANDING PAGE -->
 <section class="container">
@@ -204,5 +228,6 @@
   Coded with 💖 by <a href="#">Obi Zim</a>.
 </div>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
