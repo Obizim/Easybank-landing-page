@@ -99,9 +99,12 @@
     h1 {
       font-size: 4rem;
       margin: 0 2rem 0.5rem;
+      font-weight: 300;
     }
     p {
       margin: 0 2rem 0.5rem;
+      font-weight: 300;
+      font-size: 0.9rem;
     }
 
     button {
@@ -203,7 +206,6 @@
 
       img {
         width: 100%;
-        height: 200px;
       }
       .texts {
         padding: 10px 10px 10px 10px;

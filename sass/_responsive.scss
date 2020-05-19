@@ -80,7 +80,7 @@
     }
     &__img {
         img {
-          margin: 0 3rem 0 3rem;
+          margin: 0 2rem;
         }
       }
 }
@@ -115,6 +115,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px 5px;
 
         &__list {
            margin-top: 20px;

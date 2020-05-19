@@ -144,10 +144,13 @@
 .container__texts h1 {
   font-size: 4rem;
   margin: 0 2rem 0.5rem;
+  font-weight: 300;
 }
 
 .container__texts p {
   margin: 0 2rem 0.5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 .container__texts button {
@@ -267,7 +270,6 @@
 
 .section .articles__list img {
   width: 100%;
-  height: 200px;
 }
 
 .section .articles__list .texts {
@@ -588,7 +590,7 @@ footer .attribution a {
     font-size: 1.5rem;
   }
   .container__img img {
-    margin: 0 3rem 0 3rem;
+    margin: 0 2rem;
   }
   .main .main__entry {
     text-align: center;
@@ -631,6 +633,7 @@ footer .attribution a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 10px 5px;
   }
   .section .articles__list {
     margin-top: 20px;
